@@ -19,6 +19,33 @@ body{
     transition: background-color 0.3s, color 0.3s;
 }
 
+/* Icon Styles */
+.icon-stack{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    opacity: 0;
+    color: var(--base_text_color);
+    pointer-events: none;
+}
+/* ----------------------- */
+
+
+/* Toggle Styles */
+
+.toggle-container{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+ 
 .toggle{
     position: relative;
     display: inline-block;
@@ -59,3 +86,5 @@ body{
 .toggle input:checked + .slider::before{
      transform: translateX(1.5rem); 
 }
+
+/* ------------------------------------ */
